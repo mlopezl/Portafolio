@@ -6,7 +6,7 @@
 .header-container{
     width: 100%;
     height: 650px;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8) ), url('./assets/fondo.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6) ), url('./assets/fondo.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -14,6 +14,7 @@
 
 .header-container nav{
     width: 90%;
+    max-width: 1300px;
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -40,20 +41,25 @@ nav ul{
     gap: 30px;
 }
 
-nav ul li:last-child{
-    min-width: 80px;
-    height: 30%;
-    line-height: 40px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
-
 nav ul li a{
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 14px;
+    height: 100%;
+    width: 100%;
 }
+
+
+nav ul li:last-child{
+    width: 100px;
+    height: 50%;
+    min-width: 80px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
 
 nav ul li:first-child a{
     color: #e35c5d;
@@ -69,6 +75,8 @@ nav ul li:last-child a{
 
 .header-container header{
    height: 500px;
+   max-width: 1440px;
+   margin: 0 auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -77,7 +85,7 @@ nav ul li:last-child a{
 }
 
 header .image-container{
-    background-image: url('./assets/yo.jpeg');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0, 0.2)),url('./assets/yo.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
@@ -97,10 +105,15 @@ header p{
     color: white;
 }
 
+main{
+    background: linear-gradient(#1f2233, #180d10, #1f2233);
+}
+
 .about{
     width: 100%;
-    height: 900px;
-    background: linear-gradient(#1f2233, #180d10, #1f2233);
+    max-width: 1440px;
+    height: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -121,6 +134,7 @@ header p{
     width: 100%;
     margin-top: 100px;
     border-radius: 10px;
+    opacity: 80%;
 }
 
 .about .info-container{
@@ -189,8 +203,9 @@ header p{
 
 .services{
     width: 100%;
+    max-width: 1440px;
     min-height: 700px;
-    background: linear-gradient(#25273e, #180d10, #25273e);
+    margin: 0 auto;
     position: relative;
 }
 
@@ -222,6 +237,7 @@ header p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    padding-bottom: 100px;
 }
 
 .card{
@@ -233,6 +249,7 @@ header p{
     gap: 20px;
     border-radius: 10px;
 }
+
 
 .card i{
     color: #e35c5d;
@@ -335,6 +352,9 @@ header p{
     .header-container nav ul{
         flex-direction: column;
     }
+
+
+ 
 
     .about .info-container ul{
         grid-template-columns: 1fr;
