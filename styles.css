@@ -266,6 +266,14 @@ main{
     font-size: 16px;
 }
 
+.card .technologies .fa-css3-alt{
+    color: #264de4;
+}
+
+.card .technologies .fa-js{
+    color: #f7e018;
+}
+
 @media (max-width: 1197px){
     .header-container nav{
         justify-content: center;
